@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alcancia Digital</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Alcancia Digital</h1>
+    </header>
+
+    <section class="contenedor">
+        <h2>Insertar dinero</h2>
+        <div class="botones">
+            <button class="btn-add" data-value="1">$1</button>
+            <button class="btn-add" data-value="2">$2</button>
+            <button class="btn-add" data-value="5">$5</button>
+            <button class="btn-add" data-value="10">$10</button>
+            <button class="btn-add" data-value="20">$20</button>
+            <button class="btn-add" data-value="50">$50</button>
+            <button class="btn-add" data-value="100">$100</button>
+            <button class="btn-add" data-value="200">$200</button>
+            <button class="btn-add" data-value="500">$500</button>
+        </div>
+    </section>
+
+    <section class="contenedor">
+        <h2>Retirar dinero</h2>
+        <div class="retiro-box">
+            <input type="number" id="retiro" placeholder="Cantidad a retirar">
+            <button id="btn-retirar" class="btn-retirar">Retirar</button>
+        </div>
+    </section>
+
+    <section class="contenedor">
+        <h2>Total Ahorrado</h2>
+        <h1 id="total" class="total-numero">$0</h1>
+    </section>
+
+    <section class="contenedor">
+        <h2>Movimientos</h2>
+
+        <div class="tabla">
+            <table>
+                <thead class="encabezado">
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Cantidad</th>
+                    </tr>
+                </thead>
+
+                <tbody id="lista-movimientos">
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
